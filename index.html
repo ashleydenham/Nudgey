@@ -1,539 +1,193 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
 <title>Doyle Cleaning Co | After-Hours &amp; End of Lease Commercial Cleaning</title>
-<meta name="description" content="Doyle Cleaning Co is a family-owned commercial cleaning business providing after-hours office cleaning and end of lease vacate cleans, with police-checked staff and full insurance." />
-<style>
-  :root{
-    --navy: #0e2a3d;
-    --navy-dark: #091b28;
-    --teal: #1fb6ac;
-    --teal-dark: #158f87;
-    --ink: #10202b;
-    --muted: #5a6b76;
-    --line: #e2e8ec;
-    --bg-tint: #f4f9f9;
-    --white: #ffffff;
-    --radius: 14px;
-    --shadow: 0 8px 30px rgba(14,42,61,0.08);
-    --maxw: 1140px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color:var(--ink);
-    background:var(--white);
-    line-height:1.6;
-  }
-  img,svg{display:block; max-width:100%;}
-  a{color:inherit;}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
-  section{padding:88px 0;}
-  h1,h2,h3{line-height:1.15; margin:0 0 16px; letter-spacing:-0.01em;}
-  h1{font-size:clamp(2.1rem, 4.5vw, 3.4rem); font-weight:800;}
-  h2{font-size:clamp(1.7rem, 3vw, 2.3rem); font-weight:800; color:var(--navy);}
-  h3{font-size:1.2rem; font-weight:700; color:var(--navy);}
-  p{margin:0 0 16px; color:var(--muted);}
-  .eyebrow{
-    display:inline-block; text-transform:uppercase; letter-spacing:0.12em;
-    font-size:0.75rem; font-weight:700; color:var(--teal-dark);
-    background:rgba(31,182,172,0.12); padding:6px 14px; border-radius:999px;
-    margin-bottom:18px;
-  }
-  .btn{
-    display:inline-flex; align-items:center; justify-content:center; gap:8px;
-    padding:14px 26px; border-radius:10px; font-weight:700; font-size:0.95rem;
-    text-decoration:none; cursor:pointer; border:2px solid transparent;
-    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-  }
-  .btn:active{transform: translateY(1px);}
-  .btn-primary{background:var(--teal); color:var(--navy-dark);}
-  .btn-primary:hover{background:var(--teal-dark); color:var(--white); box-shadow:0 6px 18px rgba(31,182,172,0.35);}
-  .btn-outline{border-color:rgba(255,255,255,0.5); color:var(--white); background:transparent;}
-  .btn-outline:hover{border-color:var(--white); background:rgba(255,255,255,0.08);}
-  .btn-dark-outline{border-color:var(--navy); color:var(--navy); background:transparent;}
-  .btn-dark-outline:hover{background:var(--navy); color:var(--white);}
-
-  /* Header */
-  header{
-    position:sticky; top:0; z-index:50;
-    background:rgba(255,255,255,0.92); backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:var(--maxw); margin:0 auto;}
-  .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--navy);}
-  .brand span{font-weight:800; font-size:1.15rem; letter-spacing:-0.01em;}
-  .logo-badge{width:42px; height:42px; flex-shrink:0;}
-  nav.links{display:flex; gap:32px; align-items:center;}
-  nav.links a{text-decoration:none; color:var(--ink); font-weight:600; font-size:0.95rem;}
-  nav.links a:hover{color:var(--teal-dark);}
-  .nav-cta{display:flex; align-items:center; gap:18px;}
-  .menu-toggle{display:none; background:none; border:none; cursor:pointer; padding:8px;}
-  .menu-toggle span{display:block; width:24px; height:2px; background:var(--navy); margin:5px 0; border-radius:2px;}
-
-  /* Hero */
-  .hero{
-    background: radial-gradient(circle at 15% 20%, #123b52 0%, var(--navy) 45%, var(--navy-dark) 100%);
-    color:var(--white); position:relative; overflow:hidden;
-    padding:110px 0 100px;
-  }
-  .hero::before{
-    content:""; position:absolute; inset:0;
-    background-image:
-      radial-gradient(circle at 85% 30%, rgba(31,182,172,0.25), transparent 40%),
-      radial-gradient(circle at 70% 90%, rgba(31,182,172,0.15), transparent 45%);
-    pointer-events:none;
-  }
-  .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center; position:relative;}
-  .hero p.lead{color:rgba(255,255,255,0.82); font-size:1.15rem; max-width:520px;}
-  .hero-actions{display:flex; gap:16px; flex-wrap:wrap; margin-top:8px;}
-  .hero-stats{display:flex; gap:32px; margin-top:44px; flex-wrap:wrap;}
-  .hero-stats div strong{display:block; font-size:1.6rem; color:var(--teal);}
-  .hero-stats div span{font-size:0.85rem; color:rgba(255,255,255,0.7);}
-  .hero-card{
-    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15);
-    border-radius:var(--radius); padding:32px; backdrop-filter:blur(4px);
-  }
-  .hero-card ul{list-style:none; padding:0; margin:0;}
-  .hero-card li{
-    display:flex; gap:12px; align-items:flex-start; padding:12px 0;
-    border-bottom:1px solid rgba(255,255,255,0.1); color:rgba(255,255,255,0.9); font-size:0.95rem;
-  }
-  .hero-card li:last-child{border-bottom:none;}
-  .check{width:20px; height:20px; flex-shrink:0; color:var(--teal);}
-
-  /* Services */
-  .services-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:28px; margin-top:48px;}
-  .service-card{
-    border:1px solid var(--line); border-radius:var(--radius); padding:36px;
-    background:var(--white); box-shadow:var(--shadow); display:flex; flex-direction:column;
-  }
-  .service-icon{
-    width:56px; height:56px; border-radius:12px; background:var(--bg-tint);
-    display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--teal-dark);
-  }
-  .service-card ul{margin:16px 0 24px; padding-left:0; list-style:none;}
-  .service-card li{display:flex; gap:10px; align-items:flex-start; color:var(--muted); font-size:0.95rem; margin-bottom:10px;}
-  .service-card li svg{flex-shrink:0; margin-top:3px; color:var(--teal-dark);}
-  .service-card .tag{
-    align-self:flex-start; font-size:0.75rem; font-weight:700; color:var(--teal-dark);
-    background:rgba(31,182,172,0.1); padding:4px 10px; border-radius:999px; margin-bottom:14px;
-  }
-
-  /* Why choose us */
-  .section-tint{background:var(--bg-tint);}
-  .why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:48px;}
-  .why-card{text-align:left; padding:8px;}
-  .why-icon{
-    width:48px; height:48px; border-radius:50%; background:var(--navy);
-    color:var(--teal); display:flex; align-items:center; justify-content:center; margin-bottom:18px;
-  }
-
-  /* Meet the owners */
-  .about-intro{max-width:680px;}
-  .owners-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:28px; margin-top:44px;}
-  .owner-card{
-    border:1px solid var(--line); border-radius:var(--radius); padding:36px;
-    background:var(--white); box-shadow:var(--shadow);
-  }
-  .owner-head{display:flex; align-items:center; gap:16px; margin-bottom:20px;}
-  .avatar{
-    width:60px; height:60px; border-radius:50%; background:var(--navy); color:var(--teal);
-    display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1.3rem;
-    flex-shrink:0;
-  }
-  .owner-head h3{margin-bottom:2px;}
-  .owner-role{font-size:0.85rem; font-weight:700; color:var(--teal-dark);}
-  .owner-card ul{list-style:none; padding:0; margin:0;}
-  .owner-card li{display:flex; gap:10px; align-items:flex-start; color:var(--muted); font-size:0.95rem; margin-bottom:12px;}
-  .owner-card li svg{flex-shrink:0; margin-top:3px; color:var(--teal-dark);}
-  .owner-card li:last-child{margin-bottom:0;}
-  .family-strip{
-    display:flex; align-items:center; gap:14px; margin-top:36px; padding:18px 22px;
-    background:var(--bg-tint); border-radius:12px; font-size:0.92rem; color:var(--navy); font-weight:600;
-  }
-  .family-strip svg{color:var(--teal-dark); flex-shrink:0;}
-
-  /* How it works */
-  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:32px; margin-top:48px; counter-reset:step;}
-  .step{position:relative; padding-left:8px;}
-  .step-num{
-    display:inline-flex; align-items:center; justify-content:center;
-    width:44px; height:44px; border-radius:50%; background:var(--teal); color:var(--navy-dark);
-    font-weight:800; font-size:1.1rem; margin-bottom:18px;
-  }
-
-  /* CTA banner */
-  .cta-banner{
-    background: linear-gradient(120deg, var(--navy) 0%, var(--navy-dark) 100%);
-    color:var(--white); border-radius:var(--radius); padding:56px; margin:0 24px;
-    display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;
-    max-width:calc(var(--maxw) - 48px); margin-left:auto; margin-right:auto;
-  }
-  .cta-banner h2{color:var(--white); margin-bottom:8px;}
-  .cta-banner p{color:rgba(255,255,255,0.75); margin-bottom:0;}
-
-  /* Contact */
-  .contact-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; margin-top:48px;}
-  .contact-info-item{display:flex; gap:16px; margin-bottom:28px;}
-  .contact-info-item .ico{
-    width:44px; height:44px; border-radius:10px; background:var(--bg-tint); color:var(--teal-dark);
-    display:flex; align-items:center; justify-content:center; flex-shrink:0;
-  }
-  .contact-info-item strong{display:block; color:var(--navy); margin-bottom:2px;}
-  .placeholder{color:#b8752f; font-style:italic;}
-  form{display:grid; gap:18px;}
-  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
-  label{font-size:0.85rem; font-weight:700; color:var(--navy); margin-bottom:6px; display:block;}
-  input, select, textarea{
-    width:100%; padding:13px 14px; border:1px solid var(--line); border-radius:10px;
-    font-size:0.95rem; font-family:inherit; color:var(--ink); background:var(--white);
-  }
-  input:focus, select:focus, textarea:focus{outline:2px solid var(--teal); outline-offset:1px; border-color:var(--teal);}
-  textarea{resize:vertical; min-height:110px;}
-  .form-note{font-size:0.82rem; color:var(--muted); margin-top:-6px;}
-  #formStatus{font-size:0.9rem; font-weight:600; color:var(--teal-dark); display:none;}
-
-  /* Footer */
-  footer{background:var(--navy-dark); color:rgba(255,255,255,0.7); padding:56px 0 28px;}
-  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; margin-bottom:40px;}
-  footer .brand span{color:var(--white);}
-  footer h4{color:var(--white); font-size:0.95rem; margin:0 0 16px;}
-  footer ul{list-style:none; padding:0; margin:0;}
-  footer li{margin-bottom:10px; font-size:0.92rem;}
-  footer a{text-decoration:none; color:rgba(255,255,255,0.7);}
-  footer a:hover{color:var(--teal);}
-  .footer-bottom{
-    border-top:1px solid rgba(255,255,255,0.12); padding-top:24px;
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.85rem;
-  }
-
-  @media (max-width: 860px){
-    section{padding:64px 0;}
-    .hero{padding:70px 0 64px;}
-    .hero-grid{grid-template-columns:1fr;}
-    .services-grid{grid-template-columns:1fr;}
-    .owners-grid{grid-template-columns:1fr;}
-    .why-grid{grid-template-columns:1fr 1fr;}
-    .steps{grid-template-columns:1fr;}
-    .contact-grid{grid-template-columns:1fr; gap:36px;}
-    .form-row{grid-template-columns:1fr;}
-    .footer-grid{grid-template-columns:1fr; gap:28px;}
-    nav.links{
-      position:fixed; top:73px; left:0; right:0; background:var(--white);
-      flex-direction:column; padding:20px 24px; border-bottom:1px solid var(--line);
-      transform:translateY(-130%); transition:transform .2s ease; gap:18px;
-    }
-    nav.links.open{transform:translateY(0);}
-    .menu-toggle{display:block;}
-    .nav-cta .btn-primary{padding:11px 18px; font-size:0.88rem;}
-  }
-  @media (max-width: 620px){
-    .why-grid{grid-template-columns:1fr;}
-    .cta-banner{padding:36px 24px;}
-  }
-</style>
+<meta name="description" content="Owner-operated commercial cleaning — after-hours office cleaning and end of lease vacate cleans. Insured, thorough and reliable." />
+<meta name="theme-color" content="#0e2a3d" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Doyle Cleaning Co | Commercial Cleaning" />
+<meta property="og:description" content="Owner-operated commercial cleaning — after-hours office cleaning and end of lease vacate cleans." />
+<meta name="twitter:card" content="summary" />
+<link rel="stylesheet" href="assets/styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CleaningService",
+  "name": "Doyle Cleaning Co",
+  "description": "Owner-operated commercial cleaning: after-hours office cleaning and end of lease vacate cleaning.",
+  "areaServed": "[SERVICE AREA]",
+  "telephone": "[PHONE NUMBER]",
+  "email": "[EMAIL ADDRESS]"
+}
+</script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
-<header>
+<header class="site">
   <div class="nav">
-    <a href="#top" class="brand">
+    <a href="index.html" class="brand" aria-label="Doyle Cleaning Co home">
       <svg class="logo-badge" viewBox="0 0 64 64" aria-hidden="true">
         <circle cx="32" cy="32" r="32" fill="#0e2a3d"/>
         <path d="M20 18 L24 14 H33 A18 18 0 0 1 33 50 H24 L20 46 Z" fill="#1fb6ac"/>
       </svg>
       <span>Doyle Cleaning Co</span>
     </a>
-    <nav class="links" id="navLinks">
-      <a href="#services">Services</a>
-      <a href="#about">About Us</a>
-      <a href="#why">Trust &amp; Compliance</a>
-      <a href="#process">How It Works</a>
-      <a href="#contact">Contact</a>
+    <nav class="links" id="navLinks" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="mobile-cta">Get a Quote</a>
     </nav>
     <div class="nav-cta">
-      <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <a href="login.html" class="nav-login">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+        Client Login
+      </a>
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
+<main id="main">
+
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Family-Owned &amp; Operated · [SERVICE AREA]</span>
+      <span class="eyebrow">Owner-Operated · [SERVICE AREA]</span>
       <h1>Commercial cleaning built on trust, not shortcuts.</h1>
-      <p class="lead">Doyle Cleaning Co is a family-run business providing after-hours office cleaning and end of lease vacate cleans for commercial tenants — police-checked staff, fully insured, confidentiality guaranteed.</p>
+      <p class="lead">Doyle Cleaning Co provides after-hours office cleaning and end of lease vacate cleans for commercial tenants — carried out personally by the owners, to a standard you can rely on.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-        <a href="#services" class="btn btn-outline">View Our Services</a>
+        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+        <a href="services.html" class="btn btn-outline">View Our Services</a>
       </div>
       <div class="hero-stats">
-        <div><strong>Police-Checked</strong><span>Vetted, cleared staff</span></div>
-        <div><strong>Fully Insured</strong><span>Public liability cover</span></div>
+        <div><strong>Owner-Operated</strong><span>We do the work ourselves</span></div>
+        <div><strong>Insured</strong><span>Public liability cover</span></div>
         <div><strong>After Hours</strong><span>Around your business, not ours</span></div>
       </div>
     </div>
     <div class="hero-card">
-      <h3 style="color:#fff;">Why clients choose Doyle</h3>
+      <h2>Why clients choose Doyle</h2>
       <ul>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Police-checked &amp; cleared cleaning staff</li>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Confidentiality &amp; NDAs available on request</li>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Flexible after-hours scheduling</li>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Family-owned, hands-on management</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Work done personally by the owners</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Confidentiality &amp; NDAs available on request</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Flexible after-hours scheduling</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Experienced, standards-driven operators</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="services">
+<section id="services-overview">
   <div class="wrap">
     <span class="eyebrow">What We Do</span>
     <h2>Commercial cleaning, two ways.</h2>
-    <p style="max-width:640px;">Doyle Cleaning Co focuses on commercial sites — ongoing after-hours contracts and one-off end of lease vacate cleans — with the same checklist standard and vetted team either way.</p>
-
+    <p style="max-width:640px;">We focus on commercial sites — ongoing after-hours contracts and one-off end of lease vacate cleans — with the same checklist standard either way.</p>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 21v-4h6v4M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M6 21V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 21v-4h6v4M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg>
         </div>
         <span class="tag">Ongoing Contracts</span>
         <h3>After-Hours Commercial Cleaning</h3>
         <p>Scheduled cleaning for offices, retail and medical spaces — completed outside your operating hours so your business is never disrupted.</p>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Daily, weekly or custom schedules</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Offices, retail, medical &amp; allied health spaces</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Consistent, police-checked cleaning team</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Customised checklist &amp; regular inspections</li>
-        </ul>
-        <a href="#contact" class="btn btn-dark-outline">Get a Commercial Quote</a>
+        <a href="services.html" class="btn btn-dark-outline">Learn More</a>
       </div>
-
       <div class="service-card">
         <div class="service-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
         </div>
         <span class="tag">Make-Good Cleans</span>
         <h3>End of Lease / Vacate Cleaning</h3>
-        <p>Handing back a commercial lease? We deliver a thorough make-good clean to meet landlord and property manager expectations.</p>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Full make-good / vacate checklist clean</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Offices, warehouses &amp; retail fit-outs</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Kitchen, amenities &amp; carpet detailing</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Re-clean support if issues are raised at inspection</li>
-        </ul>
-        <a href="#contact" class="btn btn-dark-outline">Get a Vacate Clean Quote</a>
+        <p>Handing back a commercial lease? A thorough make-good clean to meet landlord and property manager expectations.</p>
+        <a href="services.html" class="btn btn-dark-outline">Learn More</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="wrap">
-    <span class="eyebrow">Family Owned &amp; Operated</span>
-    <h2>Meet Ashley &amp; Bradley</h2>
-    <p class="about-intro">Doyle Cleaning Co is a family business built on two very different careers — and one shared standard for how a commercial clean should be done.</p>
-
-    <div class="owners-grid">
-      <div class="owner-card">
-        <div class="owner-head">
-          <div class="avatar">A</div>
-          <div>
-            <h3>Ashley</h3>
-            <span class="owner-role">Co-Owner · Operations &amp; Quality</span>
-          </div>
-        </div>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Nursing background — brings clinical-level attention to hygiene, infection control and detail</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Experienced people manager, overseeing staff training and quality control</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Previously held commercial cleaning contracts — has run this business from both sides of the table</li>
-        </ul>
-      </div>
-
-      <div class="owner-card">
-        <div class="owner-head">
-          <div class="avatar">B</div>
-          <div>
-            <h3>Bradley</h3>
-            <span class="owner-role">Co-Owner · Compliance &amp; Standards</span>
-          </div>
-        </div>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Hospitality background — understands compliance, health &amp; safety and service standards inside and out</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Focused on client relationships and on-the-ground delivery</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Makes sure every site runs to the standard clients expect, every time</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="family-strip">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg>
-      Family-owned means Ashley and Bradley are personally involved in every contract — not a franchise, not a call centre.
     </div>
   </div>
 </section>
 
 <section id="why" class="section-tint">
   <div class="wrap">
-    <span class="eyebrow">Trust &amp; Compliance</span>
-    <h2>Vetted, insured, and built for sensitive sites.</h2>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/></svg></div>
-        <h3>Police-Checked Staff</h3>
-        <p>Every cleaner holds a current police check and any required clearances before starting on site.</p>
+    <span class="eyebrow">Trust &amp; Standards</span>
+    <h2>Experienced operators, not a faceless franchise.</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/></svg></div>
+        <h3>Owner-Operated</h3>
+        <p>The people who quote your job are the people who clean it — consistent standards, every visit.</p>
       </div>
-      <div class="why-card">
-        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Fully Insured</h3>
-        <p>Public liability insurance is in place for every job, of every size.</p>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Insured</h3>
+        <p>Public liability cover in place, with a certificate of currency available on request.</p>
       </div>
-      <div class="why-card">
-        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></div>
-        <h3>Confidentiality Guaranteed</h3>
-        <p>Happy to sign NDAs for clients in health, legal, government or other sensitive environments.</p>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></div>
+        <h3>Discreet &amp; Confidential</h3>
+        <p>Happy to sign NDAs for clients in health, legal, government and other sensitive environments.</p>
       </div>
-      <div class="why-card">
-        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg></div>
-        <h3>Family-Run, Hands-On</h3>
-        <p>Ashley and Bradley are personally involved in every contract, from quote to quality check.</p>
+      <div class="feature-card">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Checklist-Driven</h3>
+        <p>Every clean runs to a documented checklist customised to your site — nothing left to memory.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="process">
+<section class="cta-section">
   <div class="wrap">
-    <span class="eyebrow">How It Works</span>
-    <h2>Three steps to a spotless site.</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Request a Quote</h3>
-        <p>Tell us about your site, hours and cleaning needs — we'll come back with clear, upfront pricing.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>We Schedule the Clean</h3>
-        <p>After-hours servicing or a vacate clean timed to your move-out date — built around your business, not ours.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Ongoing Quality Checks</h3>
-        <p>Regular walkthroughs and reporting so standards never slip, with re-clean support if anything's flagged.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-tint" style="padding-top:0; padding-bottom:0;">
-  <div class="cta-banner" style="transform:translateY(-44px);">
-    <div>
-      <h2>Ready to talk about your site?</h2>
-      <p>Get a free, no-obligation quote for after-hours or end of lease commercial cleaning today.</p>
-    </div>
-    <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-  </div>
-</section>
-
-<section id="contact" style="padding-top:44px;">
-  <div class="wrap">
-    <span class="eyebrow">Get In Touch</span>
-    <h2>Let's get your quote sorted.</h2>
-
-    <div class="contact-grid">
+    <div class="cta-banner">
       <div>
-        <div class="contact-info-item">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div>
-          <div><strong>Call Us</strong><span class="placeholder">[PHONE NUMBER]</span></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><path d="m22 6-10 7L2 6"/></svg></div>
-          <div><strong>Email Us</strong><span class="placeholder">[EMAIL ADDRESS]</span></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div><strong>Service Area</strong><span class="placeholder">[SUBURBS / REGION SERVICED]</span></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-          <div><strong>Hours</strong><span class="placeholder">[OPERATING HOURS]</span></div>
-        </div>
+        <h2>Ready to talk about your site?</h2>
+        <p>Get a free, no-obligation quote for after-hours or end of lease commercial cleaning today.</p>
       </div>
-
-      <form id="quoteForm">
-        <div class="form-row">
-          <div>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="service">Service Needed</label>
-            <select id="service" name="service">
-              <option>After-Hours Commercial Cleaning</option>
-              <option>End of Lease / Vacate Cleaning</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
-        </div>
-        <div>
-          <label for="message">Tell us about the job</label>
-          <textarea id="message" name="message" placeholder="Site size, operating hours, move-out date, NDA requirements, etc."></textarea>
-        </div>
-        <p class="form-note">This form is a front-end draft only — it isn't connected to email or a booking system yet.</p>
-        <button type="submit" class="btn btn-primary" style="justify-self:start;">Request My Free Quote</button>
-        <p id="formStatus">Thanks! This is a draft site, so nothing was actually sent — but this is what a successful submission will look like.</p>
-      </form>
+      <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
     </div>
   </div>
 </section>
 
-<footer>
+</main>
+
+<footer class="site">
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a href="#top" class="brand" style="margin-bottom:16px;">
+        <a href="index.html" class="brand" style="margin-bottom:16px;" aria-label="Doyle Cleaning Co home">
           <svg class="logo-badge" viewBox="0 0 64 64" aria-hidden="true">
-            <circle cx="32" cy="32" r="32" fill="#ffffff" fill-opacity="0.08"/>
+            <circle cx="32" cy="32" r="32" fill="#ffffff" fill-opacity="0.10"/>
             <path d="M20 18 L24 14 H33 A18 18 0 0 1 33 50 H24 L20 46 Z" fill="#1fb6ac"/>
           </svg>
           <span>Doyle Cleaning Co</span>
         </a>
-        <p style="color:rgba(255,255,255,0.6); max-width:280px;">Family-owned commercial cleaning — after-hours office cleaning and end of lease vacate cleans, done right.</p>
+        <p style="color:rgba(255,255,255,0.6); max-width:300px;">Owner-operated commercial cleaning — after-hours office cleaning and end of lease vacate cleans.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
+        <h4>Explore</h4>
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#why">Trust &amp; Compliance</a></li>
-          <li><a href="#process">How It Works</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Client Login</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
-          <li style="color:#c98b45;">[PHONE NUMBER]</li>
-          <li style="color:#c98b45;">[EMAIL ADDRESS]</li>
-          <li style="color:#c98b45;">[SUBURBS / REGION SERVICED]</li>
+          <li class="footer-placeholder">[PHONE NUMBER]</li>
+          <li class="footer-placeholder">[EMAIL ADDRESS]</li>
+          <li class="footer-placeholder">[SERVICE AREA]</li>
         </ul>
       </div>
     </div>
@@ -544,25 +198,7 @@
   </div>
 </footer>
 
-<script>
-  var toggle = document.getElementById('menuToggle');
-  var links = document.getElementById('navLinks');
-  toggle.addEventListener('click', function(){
-    var isOpen = links.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  links.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){ links.classList.remove('open'); });
-  });
-
-  var form = document.getElementById('quoteForm');
-  var status = document.getElementById('formStatus');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    status.style.display = 'block';
-    form.reset();
-  });
-</script>
-
+<script src="assets/script.js"></script>
+<script src="assets/chat.js"></script>
 </body>
 </html>
