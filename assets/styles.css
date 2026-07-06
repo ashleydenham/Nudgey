@@ -244,6 +244,24 @@ footer.site li{margin-bottom:10px; font-size:0.92rem;}
 footer.site a{text-decoration:none; color:rgba(255,255,255,0.72);}
 footer.site a:hover{color:var(--teal);}
 .footer-placeholder{color:#e0a765;}
+.social-row{display:flex; gap:12px; margin-top:20px;}
+.social-row a{
+  width:38px; height:38px; border-radius:9px; display:inline-flex; align-items:center; justify-content:center;
+  background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.85);
+}
+.social-row a:hover{background:var(--teal); color:var(--navy-dark);}
+
+/* Founder credentials + story */
+.creds{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:28px;}
+.creds strong{color:var(--navy);}
+.story-grid{display:grid; grid-template-columns:1.15fr 0.85fr; gap:48px; align-items:center; margin-top:40px;}
+.story-grid p:last-child{margin-bottom:0;}
+.story-photo{
+  border-radius:var(--radius); border:2px dashed #c3d0d6; background:var(--white);
+  min-height:280px; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:24px; color:var(--muted); font-style:italic;
+}
+@media (max-width: 900px){ .story-grid{grid-template-columns:1fr;} }
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,0.12); padding-top:24px;
   display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.85rem;
