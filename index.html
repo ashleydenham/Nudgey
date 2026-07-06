@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Doyle Cleaning Co | Bond-Back &amp; Commercial Cleaning</title>
-<meta name="description" content="Doyle Cleaning Co provides bond-back guaranteed end of lease cleaning and reliable commercial &amp; office cleaning." />
+<title>Doyle Cleaning Co | After-Hours &amp; End of Lease Commercial Cleaning</title>
+<meta name="description" content="Doyle Cleaning Co is a family-owned commercial cleaning business providing after-hours office cleaning and end of lease vacate cleans, with police-checked staff and full insurance." />
 <style>
   :root{
     --navy: #0e2a3d;
@@ -133,6 +133,31 @@
     color:var(--teal); display:flex; align-items:center; justify-content:center; margin-bottom:18px;
   }
 
+  /* Meet the owners */
+  .about-intro{max-width:680px;}
+  .owners-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:28px; margin-top:44px;}
+  .owner-card{
+    border:1px solid var(--line); border-radius:var(--radius); padding:36px;
+    background:var(--white); box-shadow:var(--shadow);
+  }
+  .owner-head{display:flex; align-items:center; gap:16px; margin-bottom:20px;}
+  .avatar{
+    width:60px; height:60px; border-radius:50%; background:var(--navy); color:var(--teal);
+    display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1.3rem;
+    flex-shrink:0;
+  }
+  .owner-head h3{margin-bottom:2px;}
+  .owner-role{font-size:0.85rem; font-weight:700; color:var(--teal-dark);}
+  .owner-card ul{list-style:none; padding:0; margin:0;}
+  .owner-card li{display:flex; gap:10px; align-items:flex-start; color:var(--muted); font-size:0.95rem; margin-bottom:12px;}
+  .owner-card li svg{flex-shrink:0; margin-top:3px; color:var(--teal-dark);}
+  .owner-card li:last-child{margin-bottom:0;}
+  .family-strip{
+    display:flex; align-items:center; gap:14px; margin-top:36px; padding:18px 22px;
+    background:var(--bg-tint); border-radius:12px; font-size:0.92rem; color:var(--navy); font-weight:600;
+  }
+  .family-strip svg{color:var(--teal-dark); flex-shrink:0;}
+
   /* How it works */
   .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:32px; margin-top:48px; counter-reset:step;}
   .step{position:relative; padding-left:8px;}
@@ -192,6 +217,7 @@
     .hero{padding:70px 0 64px;}
     .hero-grid{grid-template-columns:1fr;}
     .services-grid{grid-template-columns:1fr;}
+    .owners-grid{grid-template-columns:1fr;}
     .why-grid{grid-template-columns:1fr 1fr;}
     .steps{grid-template-columns:1fr;}
     .contact-grid{grid-template-columns:1fr; gap:36px;}
@@ -225,7 +251,8 @@
     </a>
     <nav class="links" id="navLinks">
       <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
+      <a href="#about">About Us</a>
+      <a href="#why">Trust &amp; Compliance</a>
       <a href="#process">How It Works</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -241,26 +268,26 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Now booking in [SERVICE AREA]</span>
-      <h1>Spotless results you can rely on.</h1>
-      <p class="lead">Doyle Cleaning Co delivers bond-back guaranteed end of lease cleans and dependable commercial &amp; office cleaning — done right, every time.</p>
+      <span class="eyebrow">Family-Owned &amp; Operated · [SERVICE AREA]</span>
+      <h1>Commercial cleaning built on trust, not shortcuts.</h1>
+      <p class="lead">Doyle Cleaning Co is a family-run business providing after-hours office cleaning and end of lease vacate cleans for commercial tenants — police-checked staff, fully insured, confidentiality guaranteed.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
         <a href="#services" class="btn btn-outline">View Our Services</a>
       </div>
       <div class="hero-stats">
-        <div><strong>100%</strong><span>Bond-back guarantee</span></div>
-        <div><strong>Fully</strong><span>Insured &amp; vetted staff</span></div>
-        <div><strong>7 Days</strong><span>Flexible scheduling</span></div>
+        <div><strong>Police-Checked</strong><span>Vetted, cleared staff</span></div>
+        <div><strong>Fully Insured</strong><span>Public liability cover</span></div>
+        <div><strong>After Hours</strong><span>Around your business, not ours</span></div>
       </div>
     </div>
     <div class="hero-card">
       <h3 style="color:#fff;">Why clients choose Doyle</h3>
       <ul>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Real estate–standard checklist cleans</li>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Transparent, upfront quotes</li>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Out-of-hours office servicing available</li>
-        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> One team, ongoing consistency</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Police-checked &amp; cleared cleaning staff</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Confidentiality &amp; NDAs available on request</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Flexible after-hours scheduling</li>
+        <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Family-owned, hands-on management</li>
       </ul>
     </div>
   </div>
@@ -269,69 +296,114 @@
 <section id="services">
   <div class="wrap">
     <span class="eyebrow">What We Do</span>
-    <h2>Two services. One standard of clean.</h2>
-    <p style="max-width:640px;">Whether you're handing back the keys or keeping a workplace presentable, Doyle Cleaning Co builds every clean around a clear checklist and a guarantee you can hold us to.</p>
+    <h2>Commercial cleaning, two ways.</h2>
+    <p style="max-width:640px;">Doyle Cleaning Co focuses on commercial sites — ongoing after-hours contracts and one-off end of lease vacate cleans — with the same checklist standard and vetted team either way.</p>
 
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 21v-4h6v4M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg>
         </div>
-        <span class="tag">Bond-Back Guarantee</span>
-        <h3>End of Lease / Bond Cleaning</h3>
-        <p>Moving out? We provide a thorough, checklist-based clean designed to meet real estate and property manager standards — so you get your bond back without the stress.</p>
+        <span class="tag">Ongoing Contracts</span>
+        <h3>After-Hours Commercial Cleaning</h3>
+        <p>Scheduled cleaning for offices, retail and medical spaces — completed outside your operating hours so your business is never disrupted.</p>
         <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Full property checklist clean</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Kitchen, bathroom &amp; oven detailing</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Carpet &amp; window cleaning add-ons</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Re-clean guarantee if it's flagged on inspection</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Daily, weekly or custom schedules</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Offices, retail, medical &amp; allied health spaces</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Consistent, police-checked cleaning team</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Customised checklist &amp; regular inspections</li>
         </ul>
-        <a href="#contact" class="btn btn-dark-outline">Get a Bond Clean Quote</a>
+        <a href="#contact" class="btn btn-dark-outline">Get a Commercial Quote</a>
       </div>
 
       <div class="service-card">
         <div class="service-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 21v-4h6v4M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
         </div>
-        <span class="tag">Flexible Contracts</span>
-        <h3>Commercial &amp; Office Cleaning</h3>
-        <p>Keep your workplace presentable and hygienic with flexible, scheduled cleaning built around your business hours.</p>
+        <span class="tag">Make-Good Cleans</span>
+        <h3>End of Lease / Vacate Cleaning</h3>
+        <p>Handing back a commercial lease? We deliver a thorough make-good clean to meet landlord and property manager expectations.</p>
         <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Daily, weekly or fortnightly schedules</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Out-of-hours servicing available</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Fully insured, police-checked staff</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Cleaning checklist customised to your space</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Full make-good / vacate checklist clean</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Offices, warehouses &amp; retail fit-outs</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Kitchen, amenities &amp; carpet detailing</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Re-clean support if issues are raised at inspection</li>
         </ul>
-        <a href="#contact" class="btn btn-dark-outline">Get a Commercial Quote</a>
+        <a href="#contact" class="btn btn-dark-outline">Get a Vacate Clean Quote</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow">Family Owned &amp; Operated</span>
+    <h2>Meet Ashley &amp; Bradley</h2>
+    <p class="about-intro">Doyle Cleaning Co is a family business built on two very different careers — and one shared standard for how a commercial clean should be done.</p>
+
+    <div class="owners-grid">
+      <div class="owner-card">
+        <div class="owner-head">
+          <div class="avatar">A</div>
+          <div>
+            <h3>Ashley</h3>
+            <span class="owner-role">Co-Owner · Operations &amp; Quality</span>
+          </div>
+        </div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Nursing background — brings clinical-level attention to hygiene, infection control and detail</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Experienced people manager, overseeing staff training and quality control</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Previously held commercial cleaning contracts — has run this business from both sides of the table</li>
+        </ul>
+      </div>
+
+      <div class="owner-card">
+        <div class="owner-head">
+          <div class="avatar">B</div>
+          <div>
+            <h3>Bradley</h3>
+            <span class="owner-role">Co-Owner · Compliance &amp; Standards</span>
+          </div>
+        </div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Hospitality background — understands compliance, health &amp; safety and service standards inside and out</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Focused on client relationships and on-the-ground delivery</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Makes sure every site runs to the standard clients expect, every time</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="family-strip">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg>
+      Family-owned means Ashley and Bradley are personally involved in every contract — not a franchise, not a call centre.
     </div>
   </div>
 </section>
 
 <section id="why" class="section-tint">
   <div class="wrap">
-    <span class="eyebrow">Why Doyle</span>
-    <h2>Built on trust, not shortcuts.</h2>
+    <span class="eyebrow">Trust &amp; Compliance</span>
+    <h2>Vetted, insured, and built for sensitive sites.</h2>
     <div class="why-grid">
       <div class="why-card">
         <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/></svg></div>
-        <h3>Bond-Back Guarantee</h3>
-        <p>End of lease cleans backed by a re-clean guarantee if anything's flagged at inspection.</p>
+        <h3>Police-Checked Staff</h3>
+        <p>Every cleaner holds a current police check and any required clearances before starting on site.</p>
       </div>
       <div class="why-card">
         <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Fully Insured &amp; Vetted</h3>
-        <p>Every cleaner is trained and background-checked before they set foot on your property.</p>
+        <h3>Fully Insured</h3>
+        <p>Public liability insurance is in place for every job, of every size.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <h3>Flexible Scheduling</h3>
-        <p>Book a once-off clean or an ongoing contract, timed around your move-out or business hours.</p>
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></div>
+        <h3>Confidentiality Guaranteed</h3>
+        <p>Happy to sign NDAs for clients in health, legal, government or other sensitive environments.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <h3>Honest, Upfront Pricing</h3>
-        <p>Clear quotes before we start, with no hidden fees or surprise add-ons.</p>
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg></div>
+        <h3>Family-Run, Hands-On</h3>
+        <p>Ashley and Bradley are personally involved in every contract, from quote to quality check.</p>
       </div>
     </div>
   </div>
@@ -340,22 +412,22 @@
 <section id="process">
   <div class="wrap">
     <span class="eyebrow">How It Works</span>
-    <h2>Three steps to a spotless space.</h2>
+    <h2>Three steps to a spotless site.</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
         <h3>Request a Quote</h3>
-        <p>Tell us about your property or workplace and what needs doing — we'll come back with clear, upfront pricing.</p>
+        <p>Tell us about your site, hours and cleaning needs — we'll come back with clear, upfront pricing.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <h3>We Schedule the Clean</h3>
-        <p>Pick a time that works for your move-out date or business hours. We'll confirm and turn up on time.</p>
+        <p>After-hours servicing or a vacate clean timed to your move-out date — built around your business, not ours.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h3>Enjoy the Results</h3>
-        <p>Walk into a spotless property or workplace — backed by our bond-back guarantee on end of lease cleans.</p>
+        <h3>Ongoing Quality Checks</h3>
+        <p>Regular walkthroughs and reporting so standards never slip, with re-clean support if anything's flagged.</p>
       </div>
     </div>
   </div>
@@ -364,8 +436,8 @@
 <section class="section-tint" style="padding-top:0; padding-bottom:0;">
   <div class="cta-banner" style="transform:translateY(-44px);">
     <div>
-      <h2>Ready for a spotless clean?</h2>
-      <p>Get a free, no-obligation quote for your end of lease or commercial cleaning job today.</p>
+      <h2>Ready to talk about your site?</h2>
+      <p>Get a free, no-obligation quote for after-hours or end of lease commercial cleaning today.</p>
     </div>
     <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
   </div>
@@ -415,15 +487,15 @@
           <div>
             <label for="service">Service Needed</label>
             <select id="service" name="service">
-              <option>End of Lease / Bond Cleaning</option>
-              <option>Commercial / Office Cleaning</option>
+              <option>After-Hours Commercial Cleaning</option>
+              <option>End of Lease / Vacate Cleaning</option>
               <option>Not sure yet</option>
             </select>
           </div>
         </div>
         <div>
           <label for="message">Tell us about the job</label>
-          <textarea id="message" name="message" placeholder="Property size, move-out date, office hours, etc."></textarea>
+          <textarea id="message" name="message" placeholder="Site size, operating hours, move-out date, NDA requirements, etc."></textarea>
         </div>
         <p class="form-note">This form is a front-end draft only — it isn't connected to email or a booking system yet.</p>
         <button type="submit" class="btn btn-primary" style="justify-self:start;">Request My Free Quote</button>
@@ -444,13 +516,14 @@
           </svg>
           <span>Doyle Cleaning Co</span>
         </a>
-        <p style="color:rgba(255,255,255,0.6); max-width:280px;">Bond-back guaranteed end of lease cleaning and reliable commercial &amp; office cleaning.</p>
+        <p style="color:rgba(255,255,255,0.6); max-width:280px;">Family-owned commercial cleaning — after-hours office cleaning and end of lease vacate cleans, done right.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#services">Services</a></li>
-          <li><a href="#why">Why Us</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Trust &amp; Compliance</a></li>
           <li><a href="#process">How It Works</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
