@@ -16,6 +16,15 @@
   --radius: 14px;
   --shadow: 0 8px 30px rgba(14,42,61,0.08);
   --maxw: 1140px;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+}
+@font-face{
+  font-family:"Fraunces";
+  src:url("fonts/fraunces-latin.woff2") format("woff2");
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -30,9 +39,10 @@ img,svg{display:block; max-width:100%;}
 a{color:inherit;}
 .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
 section{padding:88px 0;}
-h1,h2,h3{line-height:1.15; margin:0 0 16px; letter-spacing:-0.01em;}
-h1{font-size:clamp(2.1rem, 4.5vw, 3.4rem); font-weight:800;}
-h2{font-size:clamp(1.7rem, 3vw, 2.3rem); font-weight:800; color:var(--navy);}
+h1,h2,h3{line-height:1.14; margin:0 0 16px; letter-spacing:-0.01em;}
+h1,h2{font-family:var(--font-display); font-optical-sizing:auto; letter-spacing:-0.015em;}
+h1{font-size:clamp(2.3rem, 5vw, 3.7rem); font-weight:600;}
+h2{font-size:clamp(1.8rem, 3.3vw, 2.5rem); font-weight:600; color:var(--navy);}
 h3{font-size:1.2rem; font-weight:700; color:var(--navy);}
 p{margin:0 0 16px; color:var(--muted);}
 
@@ -302,6 +312,33 @@ footer.site a:hover{color:var(--teal);}
 
 @media (max-width: 900px){ .industry-grid{grid-template-columns:1fr 1fr;} }
 @media (max-width: 560px){ .industry-grid{grid-template-columns:1fr;} }
+
+/* Trust bar */
+.trustbar{background:var(--bg-tint); border-bottom:1px solid var(--line);}
+.trustbar .wrap{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:14px 30px; padding-top:20px; padding-bottom:20px;}
+.trustbar .ti{display:inline-flex; align-items:center; gap:8px; font-size:.85rem; font-weight:700; color:var(--navy); white-space:nowrap;}
+.trustbar .ti svg{color:var(--teal-text); flex-shrink:0;}
+
+/* Testimonials */
+.testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:44px;}
+.testimonial{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  padding:30px 30px 26px; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+.testimonial .mark{font-family:var(--font-display); font-size:2.8rem; line-height:.7; color:var(--teal); margin-bottom:10px;}
+.testimonial p{color:var(--ink); font-size:1rem; margin-bottom:18px;}
+.testimonial .who{margin-top:auto; font-size:.88rem; color:var(--muted); font-weight:600;}
+.testi-note{margin-top:26px; font-size:.9rem; color:var(--muted); max-width:640px;}
+@media (max-width: 900px){ .testi-grid{grid-template-columns:1fr;} }
+
+/* Motion — scroll reveal + hover lift (class added by JS; no-JS shows all) */
+.reveal{opacity:0; transform:translateY(18px); transition:opacity .7s cubic-bezier(.16,.8,.3,1), transform .7s cubic-bezier(.16,.8,.3,1);}
+.reveal.in{opacity:1; transform:none;}
+.service-card,.product-card,.founder-card,.role-card,.testimonial{transition:transform .22s ease, box-shadow .22s ease;}
+.service-card:hover,.product-card:hover,.founder-card:hover,.role-card:hover,.testimonial:hover{
+  transform:translateY(-4px); box-shadow:0 18px 44px rgba(14,42,61,.13);
+}
+@media (prefers-reduced-motion: reduce){ .reveal{opacity:1; transform:none; transition:none;} }
 
 /* Chat widget (injected by chat.js) */
 .chat-launcher{

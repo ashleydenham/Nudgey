@@ -38,4 +38,23 @@
       form.reset();
     });
   }
+
+  // Scroll reveal — skipped entirely for reduced-motion or missing IntersectionObserver,
+  // so content is always visible without JS or when motion is reduced.
+  var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReduced && 'IntersectionObserver' in window) {
+    var sel = '.service-card, .feature-card, .product-card, .founder-card, .role-card, .industry-item, .testimonial, .step, .info-strip, .cta-banner';
+    var items = Array.prototype.slice.call(document.querySelectorAll(sel));
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) {
+      el.classList.add('reveal');
+      var idx = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+      el.style.transitionDelay = (Math.min(idx, 4) * 60) + 'ms';
+      io.observe(el);
+    });
+  }
 })();
