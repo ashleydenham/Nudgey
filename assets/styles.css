@@ -85,6 +85,11 @@ header.site{
 .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:var(--maxw); margin:0 auto; gap:16px;}
 .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--navy); flex-shrink:0;}
 .brand span{font-weight:800; font-size:1.15rem; letter-spacing:-0.01em; white-space:nowrap;}
+.brand .wm{display:inline-flex; align-items:baseline; gap:7px; white-space:nowrap;}
+.brand .wm-name{font-family:var(--font-display); font-weight:600; font-size:1.42rem; letter-spacing:-0.01em; color:var(--navy);}
+.brand .wm-sub{font-family:var(--font-body); font-weight:700; font-size:0.82rem; letter-spacing:0.01em; color:var(--teal-text);}
+footer.site .brand .wm-name{color:#fff;}
+footer.site .brand .wm-sub{color:var(--teal);}
 .logo-badge{width:42px; height:42px; flex-shrink:0;}
 nav.links{display:flex; gap:28px; align-items:center;}
 nav.links a{text-decoration:none; color:var(--ink); font-weight:600; font-size:0.95rem;}
@@ -318,6 +323,19 @@ footer.site a:hover{color:var(--teal);}
 .trustbar .wrap{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:14px 30px; padding-top:20px; padding-bottom:20px;}
 .trustbar .ti{display:inline-flex; align-items:center; gap:8px; font-size:.85rem; font-weight:700; color:var(--navy); white-space:nowrap;}
 .trustbar .ti svg{color:var(--teal-text); flex-shrink:0;}
+
+/* Stats band */
+.stats{background:linear-gradient(120deg, var(--navy), var(--navy-dark)); color:#fff; padding:60px 0;}
+.stats .wrap{display:grid; grid-template-columns:repeat(4,1fr); gap:28px; text-align:center;}
+.stat b{display:block; font-family:var(--font-display); font-weight:600; font-size:2.7rem; color:var(--teal); line-height:1; letter-spacing:-0.02em;}
+.stat span{display:block; margin-top:10px; font-size:0.92rem; color:rgba(255,255,255,0.82);}
+.stats .note{grid-column:1/-1; margin:14px 0 0; font-size:0.78rem; color:rgba(255,255,255,0.55);}
+@media (max-width: 760px){ .stats .wrap{grid-template-columns:1fr 1fr; gap:24px;} }
+
+/* Hero ambient motion */
+@keyframes heroGlow{ from{transform:translate(0,0) scale(1);} to{transform:translate(-3%,2%) scale(1.09);} }
+.hero::before{ animation:heroGlow 16s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion: reduce){ .hero::before{animation:none;} }
 
 /* Testimonials */
 .testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:44px;}
