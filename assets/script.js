@@ -39,6 +39,22 @@
     });
   }
 
+  // Theme toggle (initial theme is applied by an inline <head> snippet to avoid a flash)
+  var root = document.documentElement;
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('doyle-theme', next); } catch (e) {}
+    });
+  }
+
+  // Auto-update the copyright year
+  document.querySelectorAll('.js-year').forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+
   // Scroll reveal — skipped entirely for reduced-motion or missing IntersectionObserver,
   // so content is always visible without JS or when motion is reduced.
   var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
