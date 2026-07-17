@@ -142,6 +142,8 @@ nav.links .mobile-cta{display:none;}
 
 /* Services */
 .services-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:28px; margin-top:48px;}
+.services-grid.three{grid-template-columns:repeat(3,1fr); gap:22px;}
+@media (max-width:900px){.services-grid.three{grid-template-columns:1fr;}}
 .service-card{
   border:1px solid var(--line); border-radius:var(--radius); padding:36px;
   background:var(--white); box-shadow:var(--shadow); display:flex; flex-direction:column;
@@ -503,6 +505,17 @@ footer.site a:hover{color:var(--teal);}
 .hl{display:flex; flex-direction:column; align-items:center; gap:8px; font-size:.75rem; color:var(--muted); font-weight:600;}
 .hl .dot{width:64px; height:64px; border-radius:50%; background:var(--navy); border:2px solid var(--teal);
   display:flex; align-items:center; justify-content:center; color:var(--teal);}
+
+/* Service terms (plain-English) */
+.terms-grid{display:grid; grid-template-columns:1fr 1fr; gap:26px 34px; margin-top:36px;}
+.term{border-top:2px solid var(--navy); padding-top:16px;}
+:root[data-theme="dark"] .term{border-top-color:var(--teal);}
+.term h3{font-size:1.05rem; margin-bottom:6px;}
+.term h3 .tno{font-family:var(--font-display); color:var(--teal-text); margin-right:10px; font-weight:600;}
+:root[data-theme="dark"] .term h3 .tno{color:var(--teal);}
+.term p{font-size:.95rem; color:var(--muted); margin:0;}
+.terms-note{margin-top:28px; font-size:.85rem; color:var(--muted); border-left:2px solid var(--line); padding-left:14px;}
+@media (max-width:760px){.terms-grid{grid-template-columns:1fr;}}
 
 /* Capability sheet */
 .cap-sheet{max-width:860px; margin:0 auto;}

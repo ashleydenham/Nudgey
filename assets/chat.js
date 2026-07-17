@@ -20,7 +20,7 @@
   var KB = [
     {
       test: /(service|offer|clean what|type of clean|what do you)/i,
-      reply: "We're a commercial cleaning business with two core services: ongoing after-hours cleaning for offices, retail and medical spaces, and end-of-lease (make-good) vacate cleans. Want a quote for either one?"
+      reply: "We're a commercial cleaning business with two core services: ongoing after-hours cleaning for offices, cafés and restaurants, and end-of-lease (make-good) vacate cleans and other specific commercial jobs. Want a quote for either one?"
     },
     {
       test: /(after hours|out of hours|business hours|disrupt|overnight|evening)/i,
@@ -28,7 +28,7 @@
     },
     {
       test: /(end of lease|vacate|make good|make-good|moving out|bond)/i,
-      reply: "Our end-of-lease / vacate cleans are a full make-good clean for commercial tenants handing back a lease — offices, warehouses and retail fit-outs. Send us the site details for a quote."
+      reply: "Our end-of-lease / vacate cleans are a full make-good clean for commercial tenants handing back a lease — offices, cafés, restaurants and other commercial fit-outs. Send us the site details for a quote."
     },
     {
       test: /(quote|price|cost|how much|estimate|charge)/i,
