@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- "Spotless D" — a four-point gleam sits in the counter.
+       The sparkle is both a star (night work) and the shine of a finished clean. -->
+  <circle cx="32" cy="32" r="32" fill="#0b1c27"/>
+  <path fill="#1fb6ac" fill-rule="evenodd" transform="translate(-3 0)" d="M18 12 H33 A19 19 0 0 1 33 52 H18 Z M26 20 H32 A11.5 11.5 0 0 1 32 44 H26 Z"/>
+  <path fill="#f2ead8" d="M30.5 24 Q31.6 30.9 38 32 Q31.6 33.1 30.5 40 Q29.4 33.1 24 32 Q29.4 30.9 30.5 24 Z"/>
+</svg>

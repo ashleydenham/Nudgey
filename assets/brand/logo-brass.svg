@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- "Polished brass" — same mark, different metal.
+       Warm brass on ink: polish, shine, hotel-key-cabinet trust. Nobody's AI palette. -->
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#ecc978"/>
+      <stop offset="0.55" stop-color="#d9a441"/>
+      <stop offset="1" stop-color="#b9821f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="32" fill="#0b1c27"/>
+  <path fill="url(#brass)" fill-rule="evenodd" transform="translate(-3 0)" d="M18 12 H33 A19 19 0 0 1 33 52 H18 Z M26 20 H32 A11.5 11.5 0 0 1 32 44 H26 Z"/>
+</svg>

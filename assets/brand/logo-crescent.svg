@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- "Night Shift D" — the counter of the D holds a crescent moon.
+       D for Doyle; the moon is the after-hours promise. -->
+  <circle cx="32" cy="32" r="32" fill="#0b1c27"/>
+  <path fill="#1fb6ac" fill-rule="evenodd" transform="translate(-3 0)" d="M18 12 H33 A19 19 0 0 1 33 52 H18 Z M26 20 H32 A11.5 11.5 0 0 1 32 44 H26 Z"/>
+  <!-- moon disc, then the badge colour cuts it back to a crescent -->
+  <circle cx="30.5" cy="32" r="7" fill="#f2ead8"/>
+  <circle cx="33.8" cy="28.7" r="6" fill="#0b1c27"/>
+</svg>
